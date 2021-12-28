@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body>
+    {{>navbar}}
+    <div class="user-ragistration">
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                    <h3>Welcome</h3>
+                    <p>To the complete MERN Backend Course!</p>
+                    <input type="submit" name="" value="Login" /><br />
+                </div>
+                <div class="col-md-9 register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#login" role="tab"
+                                aria-controls="profile" aria-selected="false">Login</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Employee Registration</h3>
+                            <form action="/register" method="post">
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstname"
+                                                placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastname"
+                                                placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="password"
+                                                placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="confirmpassword"
+                                                placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span>
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email"
+                                                placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="phone"
+                                                class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="age"
+                                                placeholder="Enter Your Age *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister" value="Register" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade show" id="login" role="tabpanel" aria-labelledby="profile-tab">
+                            <h3 class="register-heading">Login</h3>
+                              <form action="/login" method="POST">
+                            <div class="row register-form">
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email *" value="" />
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="password" placeholder="Password *" value="" />
+                                    </div>
+                                    <input type="submit" class="btnLogin" value="Login" />
+                                </div>
+                            </div>
+                           </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

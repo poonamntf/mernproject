@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+<body>
+ {{>navbar}}
+  <div class="container">
+  <div class="form text-center">
+    <form action="/login" method="POST">
+      <h1>Login Here</h1>
+      Email<input type="email" name="email" placeholder="Email" class="my-3">
+     Password <input type="password" name="password" placeholder="Password" class="my-3">
+      <button type="submit" class="btn btn-outline-primary text-center my-3">Submit</button>
+      <p class="message">New User? <a href="/register">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
